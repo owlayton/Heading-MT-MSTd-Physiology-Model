@@ -1,0 +1,29 @@
+{
+    "configurationName" : "paper/MT_directionVariance",
+    "baseConfig": "paper/paper1_distWtVariation.json",
+    "repeat":{
+        "isIndependentVariable":true,
+        "independentVariableParams":{
+            "rangeStart":1,
+            "rangeStep":1,
+            "rangeEnd":50
+        },
+        "plotting": {
+        	"variable": "repeatedError"
+        }
+    },
+    "MT":{
+        "directionPreferenceVarianceFromCenter":{
+            "isIndependentVariable":true,
+            "independentVariableParams":{
+                "rangeStart":0,
+                "rangeStep":60,
+                "rangeEnd":360
+            },
+            "plotting": {
+                "variable": "curve"
+            }
+
+        }
+    }
+}

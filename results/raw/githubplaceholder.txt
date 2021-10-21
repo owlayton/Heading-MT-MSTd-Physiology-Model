@@ -1,0 +1,2 @@
+This file is here because git can not commit empty folders.
+Config files for specific experiments that you create would be placed here.

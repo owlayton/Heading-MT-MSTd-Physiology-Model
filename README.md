@@ -1,2 +1,3 @@
-# Heading-MT-MSTd-Physiology-Model
-Model code for Yumurtaci &amp; Layton (2021) eNeuro
+# Public Code for Modeling physiological sources of heading bias from optic flow
+
+Yumurtaci & Layton (2021). Modeling physiological sources of heading bias from optic flow. *eNeuro*.

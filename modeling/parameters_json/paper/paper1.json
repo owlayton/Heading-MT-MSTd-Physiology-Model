@@ -1,0 +1,87 @@
+{
+    "configurationName" : "plot/paper1",
+    "drawPlots": 0,
+    "verbose": false,
+    "plotMetric":"delDegX",
+    "Data":{
+        "framesFileName": {
+            "isPartial": true,
+            "partial": {
+                "pre": "paper1-",
+                "mid":  {
+                    "isIndependentVariable":true,
+                    "independentVariableParams":{
+                        "rangeStart":0,
+                        "rangeStep":1,
+                        "rangeEnd":20
+                    },
+                    "plotting": {
+                        "variable": "independent",
+                        "xlabel": "heading (deg)",
+                        "useHeading": 1
+                    }
+                },
+
+                "post": "-scene.mat"
+            }
+        }
+    },
+    "Model":{
+        "timestepsPerFrame": 10,
+        "exportFinalData": "both"
+    },
+    "MT":{
+        "samplingMethod": "grid",
+        "radius": {
+            "baseRadius": 6,
+            "distanceModifier" :0,
+            "randomVariance" : 0,
+            "baseRadiusSpdType3": 0.4,
+            "distanceModifierSpdType3" :0.92,
+            "randomVarianceSpdType3" : 0
+        },
+        "resolution": 128,
+        "numberOfCells": 225,
+        "decayRate": 0.1,
+        "responseUpperBound": 2.5,
+        "directionSigma": 10,
+        "speed":
+        {
+            "sigma": 0.5,
+            "speedType": 3,
+            "distScaling": 1,
+            "plotHist": 0,
+            "type3normCentDistExpDenom": 2,
+            "type2betaMuExpNumer":1,
+            "type2betaMuExpDenom":1,
+            "type2abConst": 4,
+            "numSpeedBins": 5
+        },
+        "distanceSigma": 20,
+        "directionPreferenceVarianceFromCenter": 180
+    },
+    "MSTd":{
+        "numberMSTdCells":169,
+        "decayRate": 0.1,
+        "responseUpperBound": 2.5,
+        "innerCellFactor": 2,
+        "inhibFactorCoeff": 1,
+        "excitFactorCoeff": 1,
+        "samplingMethod": "grid",
+        "resolution": 128,
+        "circularPlacementWeight" : 1,
+        "circularPlacementMaxDistanceCoeff": 1,
+        "circularFunction": 2,
+        "cosTuningExp": 2,
+        "responseType": 4,
+        "stepMultiplier" : 0.1,
+        "allowCenter" : 0,
+        "competitionType": -1,
+        "mtSpeedWeighting": 0.1,
+        "excitoryGaussVar": 0.2,
+        "inhibitoryGaussVar":0.4,
+        "excitoryGaussRankingRatio":0.5,
+        "inhibitoryGaussRankingRatio":0.5,
+        "distWtSigmaModifier": 0.6
+    }
+}

@@ -1,0 +1,27 @@
+{
+    "configurationName" : "plot/paper1_noise_distWtVariation",
+    "drawPlots": 0,
+    "verbose": false,
+    "baseConfig": "paper/paper1_distWtVariation.json",
+    "Data":{
+        "framesFileName": {
+            "partial": {
+                "pre": "defaultNoise-",
+                "mid":  {
+                    "isIndependentVariable":true,
+                    "independentVariableParams":{
+                        "rangeStart":0,
+                        "rangeStep":1,
+                        "rangeEnd":230
+                    },
+                    "plotting": {
+                        "variable": "independent",
+                        "xlabel": "heading (deg)",
+                        "useHeading": 1
+                    }
+                },
+                "post": "-scene.mat"
+            }
+        }
+    }
+}

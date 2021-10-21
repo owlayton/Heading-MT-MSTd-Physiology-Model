@@ -1,0 +1,7 @@
+{
+    "configurationName" : "paper/base/gridMSTd",
+    "title": "Variation: grid MSTd",
+    "MSTd":{
+        "samplingMethod": "grid"
+    }
+}

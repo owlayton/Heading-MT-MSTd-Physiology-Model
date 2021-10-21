@@ -1,0 +1,30 @@
+{
+    "configurationName" : "paper/MT_samplingMethod",
+    "baseConfig": "paper/paper1_distWtVariation.json",
+    "repeat":{
+        "isIndependentVariable":true,
+        "independentVariableParams":{
+            "rangeStart":1,
+            "rangeStep":1,
+            "rangeEnd":50
+        },
+        "plotting": {
+        	"variable": "repeatedError"
+        }
+    },
+    "MT":{
+        "samplingMethod":{
+            "isIndependentVariable":true,
+            "independentVariableParams":{
+                "indVarType": "array",
+                "array": [
+                        "random",
+                        "grid"
+                    ]
+            },
+            "plotting": {
+                "variable": "curve"
+            }
+        }
+    }
+}

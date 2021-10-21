@@ -1,0 +1,28 @@
+{
+    "configurationName" : "paper/MSTd_cosineTuning",
+    "baseConfig": "paper/paper1_distWtVariation.json",
+    "repeat":{
+        "isIndependentVariable":true,
+        "independentVariableParams":{
+            "rangeStart":1,
+            "rangeStep":1,
+            "rangeEnd":50
+        },
+        "plotting": {
+        	"variable": "repeatedError"
+        }
+    },
+    "MSTd":{
+        "cosTuningExp": {
+            "isIndependentVariable":true,
+            "independentVariableParams":{
+                "indVarType": "array",
+                "array": [
+                        1, 2
+                    ]
+            },
+            "plotting": {
+                "variable": "curve"            }
+        }
+    }
+}

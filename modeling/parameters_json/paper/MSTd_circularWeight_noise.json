@@ -1,0 +1,31 @@
+{
+    "configurationName" : "paper/MSTd_circularWeight_noise",
+    "baseConfig": "paper/paper1_noise.json",
+    "repeat":{
+        "isIndependentVariable":true,
+        "independentVariableParams":{
+            "rangeStart":1,
+            "rangeStep":1,
+            "rangeEnd":50
+        },
+        "plotting": {
+        	"variable": "repeatedError"
+        }
+    },
+    "MSTd":{
+        "samplingMethod": "circular",
+        "circularPlacementWeight": {
+            "isIndependentVariable":true,
+            "independentVariableParams":{
+                "indVarType": "array",
+                "array": [
+                        0.1, 0.2, 0.5, 1, 2, 5, 10
+                    ]
+            },
+            "plotting": {
+                "variable": "curve",
+                "customName":"{\\beta}"
+            }
+        }
+    }
+}

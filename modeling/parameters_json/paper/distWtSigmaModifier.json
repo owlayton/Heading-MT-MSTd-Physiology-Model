@@ -1,0 +1,34 @@
+{
+    "configurationName": "paper/distWtSigmaModifier",
+    "baseConfig":"paper/paper1_distWtVariation.json",
+    "repeat":{
+        "isIndependentVariable":true,
+        "independentVariableParams":{
+            "rangeStart":1,
+            "rangeStep":1,
+            "rangeEnd":50
+        },
+        "plotting": {
+        	"variable": "repeatedError"
+        }
+    },
+    "MSTd":{
+        "distWtSigmaModifier":{
+            "isIndependentVariable":true,
+            "independentVariableParams":{
+                "indVarType": "array",
+                "array": [
+                    1.0,   
+                    0.8,
+                    0.6,
+                    0.4,
+                    0.2,
+                    0.1
+                ]
+            },
+            "plotting": {
+                "variable": "curve"
+            }
+        }
+    }
+}

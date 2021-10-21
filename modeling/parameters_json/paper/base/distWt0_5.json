@@ -1,0 +1,10 @@
+{
+    "configurationName" : "paper/base/distWt0_5",
+    "title": "{\\beta} = 0.5",
+    "MSTd":{
+        "samplingMethod": "circular",
+        "circularPlacementMaxDistanceCoeff": 1,
+        "circularFunction": 2,
+        "circularPlacementWeight": 0.5
+    }
+}
